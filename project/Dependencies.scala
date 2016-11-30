@@ -4,8 +4,8 @@ import Keys._
 object Dependencies {
   val scala211 = "2.11.8"
 
-  private val ioVersion = "1.0.0-M7"
-  private val utilVersion = "0.1.0-M15"
+  private val ioVersion = "1.0.0-M7-6c64b6b5b29e4e12e95b09ceda6d2e8dd6092f00"
+  private val utilVersion = "0.1.0-M15-9a7abcb9c1b845e3a52e626f266f18bf9416661b"
 
   private val sbtIO = "org.scala-sbt" %% "io" % ioVersion
 
