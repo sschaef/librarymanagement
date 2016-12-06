@@ -5,7 +5,7 @@ object Dependencies {
   val scala211 = "2.11.8"
 
   private val ioVersion = "1.0.0-M7-6c64b6b5b29e4e12e95b09ceda6d2e8dd6092f00"
-  private val utilVersion = "0.1.0-M15-9a7abcb9c1b845e3a52e626f266f18bf9416661b"
+  private val utilVersion = "0.1.0-M15-82313077011f0d1654cd609d7296cdd58afebce2"
 
   private val sbtIO = "org.scala-sbt" %% "io" % ioVersion
 
@@ -45,7 +45,7 @@ object Dependencies {
   val jsch = "com.jcraft" % "jsch" % "0.1.46" intransitive ()
   val scalaReflect = Def.setting { "org.scala-lang" % "scala-reflect" % scalaVersion.value }
   val scalaXml = scala211Module("scala-xml", "1.0.5")
-  val sjsonnewVersion = "0.5.1"
+  val sjsonnewVersion = "0.5.2-dnw"
   val sjsonnewScalaJson = "com.eed3si9n" %% "sjson-new-scalajson" % sjsonnewVersion
 
   private def scala211Module(name: String, moduleVersion: String) =
