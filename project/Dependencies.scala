@@ -5,7 +5,7 @@ object Dependencies {
   val scala211 = "2.11.8"
 
   private val ioVersion = "1.0.0-M7-6c64b6b5b29e4e12e95b09ceda6d2e8dd6092f00"
-  private val utilVersion = "0.1.0-M15-11efe6846f9f85e02bc09efa0786f09025b85701"
+  private val utilVersion = "0.1.0-M15-65ffbfd1f24f843a591a575607da779aa8a526e1"
 
   private val sbtIO = "org.scala-sbt" %% "io" % ioVersion
 
