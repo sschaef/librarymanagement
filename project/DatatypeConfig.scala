@@ -33,7 +33,7 @@ object DatatypeConfig {
       { _ => "sbt.internal.librarymanagement.formats.UpdateOptionsFormat" :: Nil }
 
     // TODO: These are handled by BasicJsonProtocol, and sbt-datatype should handle them by default, imo
-    case "Option" | "Set"                  => { tpe => getFormats(oneArg(tpe)) }
+    case "Option" | "Set" | "scala.Vector" => { tpe => getFormats(oneArg(tpe)) }
     case "Map" | "Tuple2" | "scala.Tuple2" => { tpe => twoArgs(tpe).flatMap(getFormats) }
     case "Int" | "Long"                    => { _ => Nil }
   }
