@@ -4,7 +4,7 @@ import com.typesafe.tools.mima.core._, ProblemFilters._
 def baseVersion = "0.1.0"
 
 def commonSettings: Seq[Setting[_]] = Seq(
-  scalaVersion := scala211,
+  scalaVersion := scala212,
   // publishArtifact in packageDoc := false,
   resolvers += Resolver.typesafeIvyRepo("releases"),
   resolvers += Resolver.sonatypeRepo("snapshots"),
@@ -13,7 +13,7 @@ def commonSettings: Seq[Setting[_]] = Seq(
   testOptions += Tests.Argument(TestFrameworks.ScalaCheck, "-w", "1"),
   javacOptions in compile ++= Seq("-target", "6", "-source", "6", "-Xlint", "-Xlint:-serial"),
   incOptions := incOptions.value.withNameHashing(true),
-  crossScalaVersions := Seq(scala211),
+  crossScalaVersions := Seq(scala211, scala212),
   resolvers += Resolver.sonatypeRepo("public"),
   scalacOptions += "-Ywarn-unused",
   previousArtifact := None, // Some(organization.value %% moduleName.value % "1.0.0"),

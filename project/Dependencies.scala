@@ -3,9 +3,10 @@ import Keys._
 
 object Dependencies {
   lazy val scala211 = "2.11.8"
+  lazy val scala212 = "2.12.1"
 
-  val ioVersion = "1.0.0-M6"
-  val utilVersion = "0.1.0-M15"
+  val ioVersion = "1.0.0-M7-b8c7c47bd3ff86747b054d1641de3d4fd43ff403"
+  val utilVersion = "0.1.0-M15-90fa25157b33260ad0752fd55dde02e0d1fc950f-SNAPSHOT"
 
   private lazy val sbtIO = "org.scala-sbt" %% "io" % ioVersion
 
@@ -45,7 +46,7 @@ object Dependencies {
   lazy val jsch = "com.jcraft" % "jsch" % "0.1.46" intransitive ()
   lazy val scalaReflect = Def.setting { "org.scala-lang" % "scala-reflect" % scalaVersion.value }
   lazy val scalaXml = scala211Module("scala-xml", "1.0.5")
-  lazy val sjsonnewVersion = "0.4.1"
+  lazy val sjsonnewVersion = "0.6.0"
   lazy val sjsonnewScalaJson = "com.eed3si9n" %% "sjson-new-scalajson" % sjsonnewVersion
 
   private def scala211Module(name: String, moduleVersion: String) =
